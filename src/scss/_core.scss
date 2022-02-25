@@ -1,0 +1,51 @@
+@charset "UTF-8";
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style-type: none;
+  outline: none;
+  font-family: "Bellota Text", cursive;
+  font-weight: 400;
+}
+
+html {
+  font-size: 62.5%;
+  scroll-behavior: smooth;
+
+  .container {
+    width: 100%;
+    overflow: hidden;
+
+    .section-heading {
+      font-size: 10rem;
+      font-weight: bold;
+      text-transform: uppercase;
+      color: #999;
+      text-align: center;
+      opacity: 0.1;
+      text-shadow: 2rem 2rem 4rem $light-gray;
+    }
+
+    .scroll-up-btn {
+      width: 5rem;
+      height: 5rem;
+      background-color: $blue;
+      position: fixed;
+      bottom: 5rem;
+      right: 5rem;
+      border-radius: 50%;
+      font-size: 1.6rem;
+      color: $white;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      transition: background-color 0.5s;
+
+      &:hover {
+        background-color: #32e7ff;
+      }
+    }
+  }
+}
